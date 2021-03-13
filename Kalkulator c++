@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+	float a,b,hasil;
+	char matematika;
+	
+	cout<<"KAKULATOR SEDERHANA \n\n" ;
+	
+	//memasukan input dari user
+	
+	cout<<"Masukan Angka Pertama :";
+	cin>>a;
+	cout<<"Pilih Operator | + | - | / | * | :";
+	cin>>matematika;
+	cout<<"Masukan Angka Kedua :";
+	cin>>b;
+	
+	cout<<"\nHasil :";
+	cout<<a<<matematika<<b;
+	
+	if (matematika=='+'){
+		hasil = a + b;
+	}else if (matematika=='-'){
+		hasil = a - b;
+	}else if (matematika=='/'){
+		hasil = a / b;
+	}else if (matematika=='*'){
+		hasil = a * b;
+	}else {
+		cout<<"OPERATOR ANDA SALAH!!!"<<endl;
+	}
+	cout<<"="<<hasil<<endl;
+	
+	cin.get();
+	return 0;
+	
+}
